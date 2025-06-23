@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<!-- Check the javascript file for explanations, copyright and so on-->
+	<head>
+		<title>Gravity Simulator</title>
+		<link rel="stylesheet" href="Gravity.css">
+		<script type="text/javascript" src="Gravity.js"></script>
+	</head>
+	<body>
+
+		<h1>Gravity Simulator</h1>
+
+		<div class="ui" id="ui">
+			<div class="canvas">
+				<canvas class="board" id="main"></canvas>
+			</div>
+			<div class="control">
+				Scale
+				<input type="number" class="dimensions" id="scale" >
+				X-Center
+				<input type="number" class="dimensions" id="xcenter">
+				Y-Center
+				<input type="number" class="dimensions" id="ycenter">
+				Body Size
+				<input type="number" class="dimensions" id="radius">
+				Delay
+				<input type="number" class="dimensions" id="delay">
+				Distance Threshold (Beware)
+				<input type="number" class="dimensions" id="threshold">
+				Timescale (Beware)
+				<input type="number" class="dimensions" id="timescale">
+				Soft Force (Beware)
+				<input type="number" class="dimensions" id="soft">
+				Max Velocity (Beware)
+				<input type="number" class="dimensions" id="vmax">
+				Merge Distance (Beware)
+				<input type="number" class="dimensions" id="merge">
+				<p></p>
+				<button type="button" class="dimensions" id="start">
+				Start
+				</button>
+				<button type="button" class="dimensions" id="stop">
+				Stop
+				</button>
+				<button type="button" class="dimensions" id="step">
+				Step
+				</button>
+				<p></p>
+				Load
+				<input type="file" class="dimensions" id="load">
+				<button type="button" class="dimensions" id="save">
+				Save
+				</button>
+				<p></p>
+				View-X
+				<input type="number" class="dimensions" id="vx">
+				View-Y
+				<input type="number" class="dimensions" id="vy">
+				View-Z
+				<input type="number" class="dimensions" id="vz">
+				View-Rotation
+				<input type="number" class="dimensions" id="vr">
+				<p></p>
+				<button type="button" class="dimensions" id="tree">
+				Tree View
+				</button>
+				Line Size
+				<input type="number" class="dimensions" id="thickness">
+				Tree Depth
+				<input type="number" class="dimensions" id="depth2">
+				<input type="number" class="dimensions" id="depth">
+				<p></p>
+				<button type="button" class="dimensions" id="random">
+				Random
+				</button>
+				Box X
+				<input type="number" class="dimensions" id="rx" >
+				Box Y
+				<input type="number" class="dimensions" id="ry">
+				Box Z
+				<input type="number" class="dimensions" id="rz">
+				Number of Bodies
+				<input type="number" class="dimensions" id="n" >
+				Initial Velocity
+				<input type="number" class="dimensions" id="v" >
+				<script>initiate();</script>
+			</div>
+		</div>
+		
+	</body>
+	
+</html>
